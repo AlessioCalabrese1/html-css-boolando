@@ -2,11 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
+body{
+    position: relative;
+}
 img{
     height: 100%;
 }
+
+
+.shadow:hover{
+    text-shadow: 0px 0px 10px white;
+}
+.bold:hover{
+    font-weight: bold;
+}
+
 
 header{
     background-color: #FF6900;
@@ -45,9 +58,24 @@ header{
     align-items: center;
     justify-content: end;
     color: white;
+    margin-left: 5px;
 }
 .options i{
-    margin-left: 5px;
+    padding: 10px;
+}
+.disappearance{
+    position: relative;
+}
+.first{
+    position: relative;
+}
+.second{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+.second:hover{
+    opacity: 1;
 }
 
 
@@ -66,6 +94,7 @@ main{
 }
 .center-items{
     width: calc((100% / 3) - 20px);
+    margin-bottom: 40px;
 }
 .center img{
     width: 100%;
@@ -146,4 +175,36 @@ main{
 .cost span{
     color: black;
     text-decoration: line-through;
+}
+
+
+
+
+footer{
+    width: 100%;
+    background-color: #1A1A1A;
+    position: absolute;
+    bottom: -150px;
+}
+.footer-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.footer-items{
+    width: 50%;
+    color: white;
+    line-height: 30px;
+}
+.footer-items h4{
+    margin-right: 12px;
+}
+.advertising{   
+    text-align: end;
+}
+.icons i{
+    margin-left: 10px;
 }
