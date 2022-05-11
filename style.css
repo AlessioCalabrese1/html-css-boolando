@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 100%;
+}
+
+header{
+    background-color: #FF6900;
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+.container-header{
+    margin: 0 auto;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.target{
+    display: flex;
+    align-items: center;
+}
+.container-header-items{
+    width: calc(100% / 3);
+}
+.container-header a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+.logo{
+    text-align: center;
+    padding: 10px;
+}
+.options{
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+}
+.options i{
+    margin-left: 5px;
+}
+
+
+
+
+main{
+    width: 70%;
+    margin: 20px auto;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+}
+.center-items{
+    width: calc((100% / 3) - 20px);
+}
+.container-img{
+    position: relative;
+}
+.center img{
+    width: 100%;
+    height: auto;
+}
+.discounts{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.sos{
+    position: absolute;
+    top: 0;
+    left: 105%;
+    background-color: green;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.brand{
+    font-size: 11px;
+}
+.clothes{
+    font-size: 13px;
+    font-weight: bold;
+}
+.cost{
+    font-size: 11px;
+    color: red;
+    font-weight: bold;
+}
+.cost span{
+    color: black;
+    text-decoration: line-through;
+}
