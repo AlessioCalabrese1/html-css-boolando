@@ -11,9 +11,10 @@ img{
 header{
     background-color: #FF6900;
     width: 100%;
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
+    z-index: 2;
 }
 .container-header{
     margin: 0 auto;
@@ -53,22 +54,39 @@ header{
 
 
 main{
+    position: relative;
+    top: 80px;
     width: 70%;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 .center{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .center-items{
     width: calc((100% / 3) - 20px);
 }
-.container-img{
-    position: relative;
-}
 .center img{
     width: 100%;
     height: auto;
+}
+.container-img{
+    position: relative;
+}
+.container-img:hover .primary{
+    z-index: 0;
+}
+.primary{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} 
+.secondary{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .discounts{
     position: absolute;
@@ -79,6 +97,7 @@ main{
     font-size: 10px;
     font-weight: bold;
     color: white;
+    z-index: 1;
 }
 .sos{
     position: absolute;
@@ -89,6 +108,28 @@ main{
     font-size: 10px;
     font-weight: bold;
     color: white;
+}
+.sos-alone{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    background-color: green;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+.preference i{
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 3%;
+    z-index: 1;
+}
+.preference i:hover{
+    color: red;
 }
 .brand{
     font-size: 11px;
